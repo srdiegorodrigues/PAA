@@ -1,6 +1,5 @@
 # Algoritmo Selection Sort
 
-
 def selectionSort(array):
 
     #executa um loop até percorrrer todos os índices da lista e encontrar o índice do menor elemento
@@ -17,7 +16,6 @@ def selectionSort(array):
                 min_i = right_element      
         
         array[i], array[min_i] = array[min_i], array[i]
-     
     
 array = [6,1,5,2,8,6,3,4,2,1,5]
 
@@ -31,7 +29,6 @@ Implementar o algoritmo Selection Sort
 O algoritmo Selection Sort é um método simples de ordenação de elementos em uma lista ou array. 
 A ideia básica dele é selecionar repetidamente o menor elemento da lista e colocá-lo 
 na sua posição correta ordenando a lista.
-
 
 Analisando a complexidade de tempo do algoritmo, podemos observar que:
 
