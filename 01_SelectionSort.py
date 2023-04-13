@@ -6,8 +6,7 @@ def selectionSort(array):
     #executa um loop até percorrrer todos os índices da lista e encontrar o índice do menor elemento
     for i in range(len(array)): 
         #armazena o índice do menor elemento
-        min_i = i
-        
+        min_i = i        
 
         #executa um loop no restante dos elementos à direita do elemento.
         for right_element in range(i + 1, len(array)):            
@@ -15,12 +14,10 @@ def selectionSort(array):
             #comparara o elemento à direita com o valor armazenado na variavel min_i
             if array[right_element] < array[min_i]:
                 #se o elemento a direita for menor, substitui o index da variavel min_i pelo índice do elemento à direita
-                min_i = right_element
-        
+                min_i = right_element      
         
         array[i], array[min_i] = array[min_i], array[i]
-    
-        
+     
     
 array = [6,1,5,2,8,6,3,4,2,1,5]
 
@@ -46,10 +43,6 @@ Analisando a complexidade de tempo do algoritmo, podemos observar que:
     atual, que é n - i - 1, onde n é o tamanho da lista e i é o índice atual do loop externo.
     Portanto, o custo desse loop é O(n-i).
 
-
-
-    
-
 Complexidade de tempo:
     Sua complexidade de tempo é O(n^2) no pior caso e O(n) no melhor caso. 
 
@@ -57,7 +50,4 @@ Complexidade de espaço:
 
     O algoritmo Selection Sort opera diretamente no array de entrada, sem criar nenhuma outra estrutura de dados adicional.
     Portanto, a complexidade de espaço do algoritmo é O(1).
-
-
-
 """
