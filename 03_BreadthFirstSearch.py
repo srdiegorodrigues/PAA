@@ -9,21 +9,16 @@ extremidades do contêiner, pois deque fornece uma complexidade de tempo O(1) pa
 comparação com uma lista que fornece O(n) complexidade de tempo.
 """
 
-
-
 graph = {0: {1, 4, 5},
-         1: {0, 2, 5},
+         1: {0, 2, 6},
          2: {1, 3, 6},
          3: {2, 4, 7},
          4: {0, 3, 8},
-         5: {0, 1, 4},
-         6: {0, 2, 5},
-         7: {8, 6, 9},
-         8: {3, 5, 7},
-         9: {7, 8, 4}}
-
-
-
+         5: {0, 6, 8},
+         6: {1, 2, 5},
+         7: {3, 8, 9},
+         8: {4, 5, 7},
+         9: {7}}
 
 def bfs(graph, target, start=0):
     visited = set([]) # conjunto para armazenar os nós já visitados
