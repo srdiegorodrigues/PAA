@@ -54,9 +54,6 @@ Assim como na busca binária, o desempenho da busca interpolada (interpolation s
 encontrar o elemento procurado. No entanto, a função de custo da busca interpolada 
 varia de acordo com a distribuição dos elementos na estrutura de dados.
 
-Função de recorrência:
-    T(n) = T(n/2) + O(log(log(n))) ->Onde n é o tamanho do array e c representa o 
-    tempo constante necessário para realizar as comparações e atribuições na função.
 
     Pior caso: no pior caso da busca interpolada, o elemento procurado não está presente 
     na estrutura de dados, está localizado em uma das extremidades da estrutura ou os
